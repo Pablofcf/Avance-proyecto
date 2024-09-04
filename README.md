@@ -429,14 +429,14 @@ Diagonal ascendente:
 Esta función genera una sopa de letras vacía con las dimensiones especificadas por los parámetros filas y columnas.
 Entrada: Número de filas y columnas.
 Salida: Un diccionario donde cada clave es una tupla (fila, columna) que representa la posición en la sopa de letras, y el valor es un '-', indicando que esa posición está vacía.
-python
-Copiar código
+´´´´python
+
 def generar_sopa_de_letras(filas, columnas):
     sopa_de_letras = {}
     for fila in range(filas):
         for columna in range(columnas):
             sopa_de_letras[(fila, columna)] = '-'  # Inicialmente, todas las posiciones están vacías
-    return sopa_de_letras
+    return sopa_de_letras´´´´
 
 ## **2. imprimir_sopa_de_letras(sopa_de_letras, filas, columnas)**
 Esta función imprime la sopa de letras en la consola.
